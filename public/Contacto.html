@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiminium</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--Agregado del icono-->
+    <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
+    <!--Localizado de la pagina encargada de ingresar los datos css al documento html-->
+    <link rel="stylesheet" href="../css/styles-contacto.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">Adiminium</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <a href="../public/Stock.html" class="nav-link">Stock</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Clientes-Proveedores.html" class="nav-link">Clientes-Proveedores</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+    </header>
+    <main>
+        <div class="container main-container">
+            <div class="row">
+                <div class="agradecimiento-div col-4 card">
+                    <img src="../image/seller-image-1.jpg" alt="Fondo-agradecimiento" class="card-img-top Image-fondo-inicio">
+                    <div class="nosotros card-body">
+                        <h2>Juntos podemos realizar muchas cosas!</h2>
+                        <p>El crecimiento de tu empresa o negocio es importante para nosotros.</p> 
+                    </div>
+                </div>
+                <form action="./Contacto.html" class="form-contacto col-4 card">
+                    <h2>Contactanos</h2>
+                    <input type="text" name="Nombre" id="Name-contact"  placeholder="Nombre" >
+                    <input type="text" name="Empresa" id="Name-enterprise"  placeholder="Empresa o SRL">
+                    <input type="text" name="Email" id="Name-email" placeholder="Email de Contacto" >
+                    <textarea name="about-you" id="" cols="30" rows="30" placeholder="Cuentanos cual seria tu propuesta"></textarea>
+                    <button>Enviar</button>  
+                </form> 
+                <div class="agradecimiento-div col-4 card">
+                    <img src="../image/image-ejemplo-3.jpg" alt="Fondo-agradecimiento" class="card-img-top Image-fondo-inicio">
+                    <div class="nosotros card-body">
+                        <h2>Juntos podemos realizar muchas cosas!</h2>
+                        <p>El crecimiento de tu empresa o negocio es importante para nosotros.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Pie de pagina con datos de contacto y Derechos de Autor-->
+    <footer class="index-footer">
+        <section>
+            <div class="contacto" >
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/fb.png" alt="Facebook" class="footerfb footer-img">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp footer-img">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/email.png" alt="Email" class="footeremail footer-img">
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+main {
+  text-align: center;
+}
+
+.index-footer {
+  margin-top: 10px;
+  background-color: rgb(61, 60, 60);
+}
+.index-footer .contacto {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+}
+.index-footer .footer-icon-hover:hover {
+  transform: scale(110%);
+}
+.index-footer .footer-img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=styles-404.css.map */

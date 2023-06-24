@@ -1,0 +1,81 @@
+@import '_valores';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container{
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    .contacto-div{
+        justify-content: center;
+        .car-img{
+            grid-area: imagen;
+        }
+        .agradecimiento-div{
+            grid-area: agradecimiento;
+        }
+        
+        .form-contacto{
+            grid-area: form;
+        }
+        display: grid;
+        padding: 10px;
+        justify-content: space-between;
+        grid-template-areas: 
+        'imagen form agradecimiento'
+        ;
+        .card-img{
+            border: 2px double black;
+            background-color: rgb(205, 235, 245);
+            padding: 70px 10px 10px 10px;
+            display: grid;
+        
+        }
+        .agradecimiento-div{
+            border: 2px double black;
+            background-color: rgb(205, 235, 245);
+            display: grid;
+            padding: 70px 10px 10px 10px;
+        }
+        .form-contacto{
+            display: grid;
+            padding: 10px;
+            align-items: stretch;
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aqua;
+    }
+    
+  }
+
+
+.index-footer{
+    margin-top: 10px;
+    background-color:rgb(61, 60, 60);
+    .contacto{
+        align-items: center;
+        display: flex;
+        height: 80px;
+        justify-content: space-evenly;
+    }
+    .footer-icon-hover:hover{
+        transform: scale(110%);
+    }
+    .footer-img{
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+    }
+}
+

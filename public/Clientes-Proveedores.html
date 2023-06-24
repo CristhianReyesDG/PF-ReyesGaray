@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiminium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles-cl-pr.css">
+</head>
+<body>
+    <!--Header con los datos generales de pestañas-->
+    <header class="header-clpr">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">Adiminium</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item">
+                            <a href="../public/Stock.html" class="nav-link">Stock</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Clientes-Proveedores.html" class="nav-link">Clientes-Proveedores</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../public/Contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+    </header>
+    <main class="main-clpr">
+        <!--Formulario para gregado de un Proveedor con todos los datos Correspondientes-->
+        <section class="proveedores-main row">
+            <div class="add-prov col-8">        
+                <h2>DATOS DE PROVEEDOR</h2>
+                <form action="" class="proveedores-datos">
+                    <label for="">Tipo de Documentacion</label>
+                    <select name="" id="">
+                        <option value="">DNI</option>
+                        <option value="">CUIT</option>
+                    </select>
+                    <label for="">Numero</label>
+                    <input type="number" name="" id="">
+                    <label for="">Razon Social/Nombre </label>
+                    <input type="text" name="" id="">
+                    <label for="">Nombre de Fantasia </label>
+                    <input type="text" name="" id="">
+                    <label for="">Codigo de Proveedor</label>
+                    <input type="text" name="" id="">
+                    <label for="">Categoria de Proveedor</label>
+                    <input type="text" name="" id="">
+                    <label for="">Personeria</label>
+                    <select name="" id="">
+                        <option value="">Fisica</option>
+                        <option value="">Juridica</option>
+                    </select><br>
+                </form>
+                <H2>DATOS DE CONTACTO</H2>
+                <form action="" class="proveedores-contacto">
+                        <label for="">Pais</label>
+                        <select id="" name="">
+                            <option value="">Pais Ejemplo</option>
+                        </select>
+                        <label for="">Provincia</label>
+                        <select id="" name="">
+                            <option value="Proveedor">Provincia Ejemplo</option>
+                        </select>
+                        <label for="">Localidad</label>
+                        <select id="" name="">
+                            <option value="">Localidad Ejemplo</option>
+                        </select>
+                        <label for="">Telefono</label>
+                        <input type="text" name="" id="">
+                        <label for="">Direccion</label>
+                        <input type="text" name="" id="">
+                        <label for="">Email</label>
+                        <input type="text" name="" id="">
+                </form> 
+                <h2>DATOS ADICIONALES</h2>
+                <form action="" class="pr-datos-ad">
+                    <label for="">Obervaciones</label>
+                    <textarea name="" id="obs-pr" cols="50" rows="5" class="text-box">
+
+                    </textarea>
+                    <button class="subir-datos btn btn-outline-dark">Agregar</button>
+                    <button class="cancelar btn btn-outline-dark"> Cancelar</button>
+                </form>
+            </div>
+            <!--Tabla con el listado de los proveedores ya cargados
+            Mas la posibilidad de buscar entre ellos alguno en especial
+            Tambien estan los botones de editado y de Eliminacion en caso de que se desee hacerlo-->           
+            <div class="ver-proveedores col-8">
+                <h2>LISTADO DE PROVEEDORES</h2>
+                <form action="" class="form-lista-prov">
+                    <label for="" class="ing-prov-busq">Ingrese el Nombre o Algun dato de Proveedor</label>
+                    <input type="text" name="" id="" class="busq-prov">
+                    <div class="boton-busqueda">
+                        <button type="button" class="btn btn-dark"> Buscar </button>
+                        <button type="button" class="btn btn-dark"> Agregar un Proveedor </button>
+                        <button type="button" class="btn btn-dark"> Descarga de Informes </button>
+                    </div>
+                </form>
+                <table class="lista-proveedores">
+                    <tr>
+                        <th class="encabezado-tabla">Razon Social </th>
+                        <th class="encabezado-tabla">Nombre de Fantasia </th>
+                        <th class="encabezado-tabla">Codigo </th>
+                        <th class="encabezado-tabla">Acciones </th>
+                    </tr>
+                    <tr>
+                        <th>PepsiCo Snacks & Sodas</th>
+                        <th>PepsiCo</th>
+                        <th>PEPSI</th>
+                        <th>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Editar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Coca-Cola & Co.</th>
+                        <th>Coca Cola</th>
+                        <th>COCA-COLA</th>
+                        <th>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Editar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Mondalez International</th>
+                        <th>Chocolates Milka </th>
+                        <th>Milka</th>
+                        <th>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light">Editar</button>
+                                <button type="button" class="btn btn-danger">Eliminar</button>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!--Seccion de Agregado de un cliente-->
+        <section class="clientes-main row">
+            <div class="add-cl col-8">        
+                <h2>DATOS DE CLIENTE</h2>
+                <form action="" class="clientes-datos">
+                    <label for="">Tipo de Documentacion</label>
+                    <select name="" id="">
+                        <option value="">DNI</option>
+                        <option value="">CUIT/CUIL</option>
+                    </select>
+                    <label for="">Numero</label>
+                    <input type="number" name="" id="">
+                    <label for="">Razon Social/Nombre </label>
+                    <input type="text" name="" id="">
+                    <label for="">Nombre de Fantasia</label>
+                    <input type="text" name="" id="">
+                    <label for="">Codigo de Cliente</label>
+                    <input type="text" name="" id="">
+                    <label for="">Categoria de Cliente</label>
+                    <input type="text" name="" id="">
+                    <label for="">Personeria</label>
+                    <select name="" id="">
+                        <option value="">Fisica</option>
+                        <option value="">Juridica</option>
+                    </select>
+                </form>
+                <H2>DATOS DE CONTACTO</H2>
+                <form action="" class="clientes-contacto">
+                    <label for="">Pais</label>
+                    <select id="" name="">
+                        <option value="">Pais Ejemplo</option>
+                    </select>
+                    <label for="">Provincia</label>
+                    <select id="" name="">
+                        <option value="">Provincia Ejemplo</option>
+                    </select>
+                    <label for="">Localidad</label>
+                    <select id="" name="">
+                        <option value="">Localidad Ejemplo</option>
+                    </select>
+                    <label for="">Telefono</label>
+                    <input type="text" name="" id="">
+                    <label for="">Direccion</label>
+                    <input type="text" name="" id="">
+                    <label for="">Email</label>
+                    <input type="text" name="" id="">
+                </form> 
+                <h2>DATOS ADICIONALES</h2>
+                <form action="" class="cl-datos-ad">
+                    <label for="">Obervaciones</label>
+                    <textarea name="" id="obs-cl" cols="50" rows="5">
+                    </textarea>
+                    <button class="subir-datos">Agregar</button>
+                    <button class="cancelar"> Cancelar</button>
+                </form>
+            </div>
+            <!--Tabla con el listado de los clientes ya cargados
+            Mas la posibilidad de buscar entre ellos alguno en especial
+            Tambien estan los botones de editado y de Eliminacion en caso de que se desee hacerlo-->  
+            <div class="ver-clientes col-8">
+                <h2>LISTADO DE ClIENTES</h2>
+                <form action="" class="form-lista-cl">
+                    <label for="" class="ing-cl-busq">Ingrese el Nombre o Algun dato de Proveedor</label>
+                    <input type="text" name="" id="" class="busq-cl">
+                    <div class="boton-busqueda">
+                        <button type="button"> Buscar </button>
+                        <button type="button"> Agregar un Proveedor </button>
+                        <button type="button"> Descarga de Informes </button>
+                    </div>
+                </form>
+                <table class="lista-cl">
+                    <tr>
+                        <th class="encabezado-tabla">DNI/CUIL/CUIT </th>
+                        <th class="encabezado-tabla">Nombre</th>
+                        <th class=></th>
+                    </tr>
+                    <tr>
+                        <th>111111111</th>
+                        <th>Juan Pedro</th>
+                        <th>
+                            <button type="button" class="btn btn-light btn-outline-dark">Detalle Cliente</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>222222222</th>
+                        <th>Mercado Vecino</th>
+                        <th>
+                            <button type="button" class="btn btn-light btn-outline-dark">Detalle Cliente</button>
+                        </th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </section>
+    </main>
+    <!--Footer con datos de contacto y las redes sosciales-->
+    <footer class="index-footer">
+        <section>
+            <div class="contacto" >
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/fb.png" alt="Facebook" class="footerfb footer-img">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp footer-img">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/email.png" alt="Email" class="footeremail footer-img">
+                </a>
+            </div>
+        </section>
+    </footer>
+    </body>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

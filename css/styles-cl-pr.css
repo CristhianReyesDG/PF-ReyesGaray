@@ -1,0 +1,222 @@
+/*Puesta en cero de valores por defecto de la pagina*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.add-prov {
+  grid-area: provdat;
+}
+
+.ver-proveedores {
+  grid-area: proveedorlist;
+}
+
+.add-cl {
+  grid-area: clientdat;
+}
+
+.ver-clientes {
+  grid-area: clientlist;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .proveedores-main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+main .proveedores-main .add-prov {
+  border: 2px solid black;
+  background-color: lightblue;
+  padding: 10px;
+}
+main .proveedores-main .add-prov .proveedores-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .proveedores-main .add-prov .proveedores-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .proveedores-main .add-prov .pr-datos-ad {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "label . . " "textbox textbox subir" "textbox textbox  ." "textbox textbox  cancelar";
+}
+main .proveedores-main .add-prov .pr-datos-ad .subir-datos {
+  grid-area: subir;
+}
+main .proveedores-main .add-prov .pr-datos-ad .text-box {
+  grid-area: textbox;
+}
+main .proveedores-main .add-prov .pr-datos-ad .cancelar {
+  grid-area: cancelar;
+}
+main .proveedores-main .ver-proveedores {
+  padding: 20px;
+  border: 2px solid black;
+  background-color: rgb(100, 100, 172);
+  display: flex;
+  flex-direction: column;
+}
+main .proveedores-main .ver-proveedores .form-lista-prov {
+  display: grid;
+  grid-row: 1fr 1fr;
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+main .proveedores-main .ver-proveedores .form-lista-prov .boton-busqueda {
+  display: flex;
+  justify-content: space-between;
+}
+main .proveedores-main .ver-proveedores .lista-proveedores {
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+main .proveedores-main .ver-proveedores .encabezado-tabla {
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  main .proveedores-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .proveedores-main .add-prov {
+    width: 100%;
+    border: 2px solid black;
+  }
+  main .proveedores-main .add-prov .proveedores-datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .proveedores-main .add-prov .proveedores-contacto {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  main .proveedores-main .ver-proveedores {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+main .clientes-main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+main .clientes-main .add-cl {
+  border: 2px solid black;
+  background-color: lightblue;
+  padding: 20px;
+}
+main .clientes-main .add-cl .clientes-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .clientes-main .add-cl .clientes-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .clientes-main .add-cl #obs-cl {
+  resize: none;
+  grid-area: textbox;
+}
+main .clientes-main .ver-clientes {
+  padding: 20px;
+  background-color: rgb(100, 100, 172);
+  display: flex;
+  flex-direction: column;
+}
+main .clientes-main .cl-datos-ad {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "label . . " "textbox textbox subir" "textbox textbox  ." "textbox textbox  cancelar";
+}
+main .clientes-main .cl-datos-ad .subir-datos {
+  grid-area: subir;
+}
+main .clientes-main .cl-datos-ad .cancelar {
+  grid-area: cancelar;
+}
+main .clientes-main .ver-clientes {
+  border: 2px solid black;
+}
+main .clientes-main .ver-clientes .form-lista-cl {
+  display: grid;
+  grid-row: 1fr 1fr;
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+main .clientes-main .ver-clientes .form-lista-cl .boton-busqueda {
+  display: flex;
+  justify-content: space-between;
+}
+main .clientes-main .ver-clientes .lista-cl {
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+main .clientes-main .ver-clientes .encabezado-tabla {
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  main .clientes-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .clientes-main .add-cl {
+    width: 100%;
+    border: 2px solid black;
+  }
+  main .clientes-main .add-cl .cl-datos-add {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  main .clientes-main .add-cl .clientes-contacto {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  main .clientes-main .ver-clientes {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+
+.index-footer {
+  margin-top: 10px;
+  background-color: rgb(61, 60, 60);
+}
+.index-footer .contacto {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+}
+.index-footer .footer-icon-hover:hover {
+  transform: scale(110%);
+}
+.index-footer .footer-img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=styles-cl-pr.css.map */
